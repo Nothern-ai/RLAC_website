@@ -45,9 +45,7 @@ in text generation and correctness in code generation, while also outperforming
 exhaustive verification and reward model methods. We show that dynamic critics
 are more effective than fixed critics, showcasing the potential of RLAC for scaling
 RL post-training to free-form generation tasks.`
-const paperAbstract2 = `Enumerative methods exhaustively or approximately enumerate evaluation rubrics 
-for verification;reward-model approaches use a pretrained reward model to produce a scalar reward;
-and RLAC dynamically identifies and validates potential errors.`
+const paperAbstract2 = `Enumerative methods verify outputs by enumerating evaluation rubrics exhaustively or approximately; reward-model approaches replace explicit verification with a pretrained model that outputs scalar rewards; and RLAC dynamically identifies and validates likely errors.`
 
 
 const paperEvaluationContent1 = ` 
@@ -83,7 +81,6 @@ const BIBTEX_TEXT = `@article{2025rlac,
   author={Wu, Mian and Zhang, Gavin and Min, Sewon and Levine, Sergey and Kumar, Aviral},
   journal={arXiv preprint arXiv:},
   year={2025},
-  note={under review}
 }`;
 
 export default function Paper() {
@@ -184,14 +181,23 @@ export default function Paper() {
         </div>
         <div className={styles.paperEvaluation}>
         <div>Evaluation</div>
-        {paperEvaluations.map(({ text, imgUrl}) => (
-          <div>
-          <div className={styles.evaluationDescriptions}>
-            {text}
-          </div>
-          <div className={styles.evaluationImages} v-if={imgUrl && imgUrl != ""}>
-            <img src={imgUrl} alt="Evaluation Image" className={`${styles.evalImage} ${styles.evalImageSmall}`} />
-          </div>
+        {paperEvaluations.map(({ title, text, imgUrl }) => (
+          <div key={title} className={styles.evaluationSection}>
+            <div className={styles.evaluationSubtitle}>
+              {title}
+            </div>
+            <div className={styles.evaluationDescriptions}>
+              {text}
+            </div>
+            {imgUrl && imgUrl !== "" && (
+              <div className={styles.evaluationImages}>
+                <img
+                  src={imgUrl}
+                  alt={title}
+                  className={`${styles.evalImage} ${styles.evalImageSmall}`}
+                />
+              </div>
+            )}
           </div>
         ))}
         </div>

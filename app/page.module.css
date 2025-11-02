@@ -253,6 +253,23 @@
   color: var(--text-secondary);
 }
 
+/* ==== Evaluation section (追加这两段) ==== */
+.evaluationSection {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-md);
+  border-top: 1px dashed var(--border-light);
+}
+
+.evaluationSubtitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-sm);
+  text-align: center;            /* 如果你更喜欢居中，改成 center */
+  letter-spacing: -0.01em;
+}
+
+
 /* Responsive design */
 @media (max-width: 768px) {
   .paperContainer {

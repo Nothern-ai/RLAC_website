@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Next.js on GitHub Pages',
-  description: 'Deploy your static Next.js site to GitHub Pages.',
+  title: 'RLAC: Reinforcement Learning with Adversarial Critic',
+  description: 'Adversarial critic framework for free-form generation tasks.',
 };
 
 export default function RootLayout({

@@ -23,9 +23,9 @@ const organizations = [
   {superscript: "3", organizations: ["Carnegie Mellon University"]}
 ]
 
-const paperTitle = "RLAC: REINFORCEMENT LEARNING WITH ADVERSARIAL CRITIC FOR FREE-FORM GENERATIONS";
+const paperTitle = "RLAC: REINFORCEMENT LEARNING WITH ADVERSARIAL CRITIC FOR FREE-FORM GENERATION TASKS";
 
-const paperDescription = "RLAF trains a generator and a dynamic critic in an adversarial game, teaching the system to learn what deserves verification, and achieving scalable, prompt-specific, and verifiable RL post-training for free-form generation tasks.";
+const paperDescription = "Instead of using static reward models or critics, RLAC trains a dynamic critic alongside the generator (RL policy), using an adversarial two-player game formulation. This enables verifying outputs on free-form generation tasks without needing to enumerate or identify all possible rubrics or manually engineer robust reward models";
 
 const paperAbstract1 = `Open-ended generation tasks require outputs to satisfy diverse and often implicit
 task-specific evaluation rubrics. The sheer number of relevant rubrics leads to prohibitively

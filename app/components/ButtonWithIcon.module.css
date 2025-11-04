@@ -18,9 +18,12 @@
   justify-content: center;
 }
 
-.linkButton img {
+.icon {
   width: 20px;
   height: 20px;
+  margin-right: 2px;
+  vertical-align: middle;
+  display: inline-block;
   flex-shrink: 0;
 }
 

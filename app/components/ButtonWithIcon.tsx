@@ -17,6 +17,7 @@ const ButtonWithIcon: React.FC<ButtonWithIconProps> = ({ text, iconUrl, onClick,
         <img
           src={iconUrl}
           alt="icon"
+          className={styles.icon}
         />
       )}
       {text}

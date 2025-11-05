@@ -45,7 +45,7 @@ const CodeBlockWithCopyBtn: React.FC<CodeBlockWithCopyBtnProps> = ({ code }) => 
     return (
         <div className={styles.paperBibtex}>
             <div className={styles.bibtexHeader}>
-                <span>BiTex</span>
+                <span>BibTex</span>
                 <CopyButton code={code} />
             </div>
             <div className={styles.codeBlock}>

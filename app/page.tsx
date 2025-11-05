@@ -10,7 +10,7 @@ import styles from './page.module.css';
 const repoName = 'RLAC_website';
 
 const authors = [
-  {name: "Mian Wu", superscript: "†1", link:'https://mianwu01.github.io/'},
+  {name: "Mian Wu", superscript: "1", link:'https://mianwu01.github.io/'},
   {name: "Gavin Zhang", superscript: "2"},
   {name: "Sewon Min", superscript: "2", link:'https://www.sewonmin.com/'},
   {name: "Sergey Levine", superscript: "2", link:'https://people.eecs.berkeley.edu/~svlevine/'},
@@ -25,7 +25,7 @@ const organizations = [
 
 const paperTitle = "RLAC: REINFORCEMENT LEARNING WITH ADVERSARIAL CRITIC FOR FREE-FORM GENERATION TASKS";
 
-const paperDescription = "Instead of using static reward models or critics, RLAC trains a dynamic critic alongside the generator (RL policy), using an adversarial two-player game formulation. This enables verifying outputs on free-form generation tasks without needing to enumerate or identify all possible rubrics or manually engineer robust reward models";
+const paperDescription = "Instead of using static reward models or critics, RLAC trains a dynamic critic alongside the generator (RL policy), using an adversarial two-player game formulation. This enables verifying outputs on free-form generation tasks without needing to enumerate or identify all possible rubrics or manually engineer robust reward models.";
 
 const paperAbstract1 = `Open-ended generation tasks require outputs to satisfy diverse and often implicit
 task-specific evaluation rubrics. The sheer number of relevant rubrics leads to prohibitively
